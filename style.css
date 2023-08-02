@@ -1,240 +1,166 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'poppins', sans-serif ;
     box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    color: #5a5a5a;
-}
-img{
-    cursor: pointer;
-}
-.flex-div{
-    display: flex;
-    align-items: center;
-}
-nav{
-    position: sticky;
-    padding: 10px 2%;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0,0, 0,0.2);
-    background:#fff;
-    top: 0;
-    z-index: 10;
-    
-}
-.nav-right img{
-width: 25px;
-margin-right: 25px;
-}
-.nav-right .user-icon{
-    width: 35px;
-    border-radius: 50%;
-    margin-right: 0;
-
-}
-.nav-left .menu{
-    width: 25px;
-    margin-right: 25px ;
-}
-.nav-left .logo{
- width: 130px;
-}
-.nav-middle .mic{
-    width: 16px;
-}
-.nav-middle .search-box{
-    border: 1px solid #ccc;
-    margin-right: 15px;
-    padding :8px 12px;
-    border-radius: 25px;
-}
-.nav-middle .search-box input{
-    
-    width: 400px;
-    border: 0;
-    outline: 0;
-    
-}
-.nav-middle .search-box img{
-    width: 15px;
-}
-/*-------sidebar---------*/
-.sidebar{
-    background: #fff;
-    width: 15%;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  body {
     height: 100vh;
-    position: fixed;
-    top:0;
-    padding-left: 2%;
-    padding-top: 80px;
-}
-.shortcut-links a img{
-    width: 20px;
-    margin-right: 20px;
-
-}
-.shortcut-links a{
-    display:flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width:fit-content;
-    flex-wrap: wrap;
-}
-.shortcut-links a:first-child{
-    color: #ed3833;
-}
-.sidebar hr{
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    width: 85%;
-}
-.subscribe-list h3{
-    font-size: 13px;
-    margin: 20px 0;
-    color: #5a5a5a;
-}
-.subscribe-list a{
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: fit-content;
-    flex-wrap: wrap;
-}
-.subscribe-list a img{
-    width: 25px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-.small-sidebar{
-    width: 5%;
-}
-.small-sidebar a p{
- display: none;
-}
-.small-sidebar h3{
- display: none;
- width: 50%;
- margin-bottom: 25px;
-}
-.small-sidebar hr{
-    width: 50%;
-    margin-bottom: 25px;
-}
-/*--------main------------*/
-.container{
-    background: #f9f9f9;
-    padding-left: 17%;
-    padding-right: 2%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.large-container{
-    padding-left: 7%;
-
-}
-.banner{
-    width: 100%
-}
-.banner img{
-    width: 100%;
-    border-radius: 8px;
-}
-.list-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-column-gap: 16px;
-    grid-row-gap: 30px;
-    margin-top: 15px;
-}
-.vid-list .thumbnail{
-    width: 100%;
-    border-radius: 5px;
-}
-.vid-list .flex-div{
-    align-items: flex-start;
-    margin-top: 7px;
-}
-.vid-list .flex-div img{
-    width:35px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-.vid-info{
-    color: #5a5a5a;
-    font-size: 13px;
-}
-.vid-info a{
-    color: #000;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 5px;
-}
-@media (max-width:900px){
-    .menu{
-        display:none;
-    }
-    .sidebar{
-        display: none;
-    }
-    .container ,.large-container{
-        padding-left: 5px;
-        padding-right:5px;
-
-    }
-    .nav-right img{
-        display: none;
-    }
-    .nav-right .user-icon{
-        display: block;
-        width:30px;
-    }
-    .nav-middle .search-box input{
-        width: 100px;
-    }
-    .nav-middle .mic{
-        display: none;
-    }
-    .logo{
-        width: 90px;
-    }
-}
-/*--------play video page-------------*/
-.play-container{
-    padding-left: 2%;
-}
-.row{
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.play-video{
-    flex-basis: 69%;
-}
-.right-sidebar{
-    flex-basis: 30%;
-}
-.play-video video{
-    width: 100%;
-}
-.side-video-list{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
-}
-.side-video-list img{
+    padding: 20px 10px;
+    height: 60px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  li {
+    text-align: center;
+    padding: 14px 12px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  
+  .small-text {
+    font-size: 0.9rem;
+  }
+  
+  .menu-bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .menu-bg:hover {
+    background-color: rgba(100, 100, 100, 0.1);
+    cursor: pointer;
+  }
+  
+  .menu-button {
+    width: 15px;
+  }
+  
+  .profile-pic {
+    margin-top: 6px;
+    border-radius: 50%;
     width: 100%;
-}
-.side-video-list .small-thumbnail{
-    flex-basis: 49%;
-}
-.side-video-list .vid-info{
-    flex-basis: 49%
-}
-.play-video .tags a{
-    color: #0000ff;
-    font-size: 13px;
-}
+  }
+  
+  .search-wrapper {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  input {
+    width: 580px;
+    height: 45px;
+    padding-left: 50px;
+    font-size: 1.2rem;
+    border-radius: 45px;
+    border: 1px solid #d3d3d3;
+  }
+  
+  input:hover {
+    box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .search {
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .mic {
+    width: 15px;
+    position: absolute;
+    top: 12px;
+    left: 540px;
+  }
+  
+  .buttons {
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  button {
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
+    cursor: pointer;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .panel {
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .panel > * {
+    flex-basis: 33%;
+  }
+  
+  p {
+    color: grey;
+    padding-left: 13px;
+  }
+  
+  .carbon {
+    text-align: center;
+  }
+  
+  .leaf {
+    width: 12px;
+  }
+  
+  .right {
+    justify-content: flex-end;
+  }
